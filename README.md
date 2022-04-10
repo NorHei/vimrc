@@ -42,13 +42,14 @@ You can use `: version`  in command mode to show what files he is checking.
 
 ## Tabs
 
-| Command             | Result                |
-| ------------------- | --------------------- |
-| :tabnew             | new tab               |
-| ,t                  | new tab with explorer |
-| gt<br />CTRL + PgUp | go next tab           |
-| gT<br />CTRL + PgDn | go previous tab       |
-| {i}gt               | got to tab number {i} |
+| Command             | Result                                    |
+| ------------------- | ----------------------------------------- |
+| :tabnew             | new tab                                   |
+| ,t                  | new tab with explorer                     |
+| ,T                  | remove complete tab with multiple windows |
+| gt<br />CTRL + PgUp | go next tab                               |
+| gT<br />CTRL + PgDn | go previous tab                           |
+| {i}gt               | got to tab number {i}                     |
 
 
 
