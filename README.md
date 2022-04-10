@@ -1,6 +1,8 @@
 # vimrc
 My personal .vimrc preferences and collection of settings. Basically i tried to make a collection that does not need any plugins besides from the features already delivered with VI improved (Vim) so i can use this on almost every server without  installing anything. 
 
+**ATTENTION**: This help contains normal VIM commands and newly added stuff added whith custom .vimrc in a wild mix.  
+
 # Additional help
 
 ## Where to place it
@@ -12,7 +14,7 @@ usually it should be Placed here:
 | user vimrc file     | $HOME/.vimrc |
 | 2nd user vimrc file | ~/.vim/vimrc |
 
-You can use `: version`  in command mode to show what files he is checking. 
+You can use `:version`  in command mode to show what files he is checking. 
 
 ```bash
    system vimrc file: "/usr/local/etc/vim/vimrc"
