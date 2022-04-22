@@ -53,7 +53,33 @@ You can use `:version`  in command mode to show what files he is checking.
 | gT<br />CTRL + PgDn | go previous tab                           |
 | {i}gt               | got to tab number {i}                     |
 
+## Clipboad 
+| Command             | Result                                    |
+| ------------------- | ----------------------------------------- |
+| "+y                 | copy to clipboard                         |
+| "*y                 | copy to middle mouse button               |
+| "+p                 | paste from clipboard                      |
+| "*p                 | paste from middle mouse button            |
 
+### Add support permanently 
+As mentioned below there are systems whithout a clippboard. Thats the reason why i did not add this permanantly to my vimrc.
+```
+set clipboard=unnamedplus
+" or
+set clipboard=unnamed
+```
+Depending on what clipboard you want to use.
+
+### Does my VOM support Clipboard?
+If you wants to know if your VIM supports cipboard:
+```
+vim --version | grep clip
+```
+
+### No clipboard system
+The clipboard sytem on linux/Unix machines is handled by the Xserver, So if your Server has no X11 System you have to rely on the copy and paste capability of your terminal application. Always remember that if you hold CTRL and select whith your mouse you get into blocksekection mode.(sometimes it's CRTL+ALT)  
+
+In Putty (Windows to Linux), you can highlight the text in the tty by holding the left mouse button down, then clicking the right mouse button (without lifting the left button). Then you can paste it anywhere you want. 
 
 # PHP
 
@@ -62,6 +88,7 @@ Several links concerning PHP and VIM
 - [Info about autocomplete on stackoverflow](https://stackoverflow.com/questions/9863706/php-autocomplete-with-vim)
 - [Vim for PHP: The Complete Guide for a Powerful PHP IDE](https://thevaluable.dev/vim-php-ide/)
 - https://www.simplified.guide/vim/auto-complete-php
+
 
 
 
