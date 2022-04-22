@@ -306,17 +306,26 @@ if exists("+showtabline")
     highlight link TabNum Special
 endif
 
+
 " Help whith easy search and replace
 " By pressing ctrl+r in visual mode, you will be prompted to enter text to replace with.
 " Press enter and then confirm each change you agree with y or decline with n.
 " This command will override your register h so you can choose other one (
-" by changing h in the command above to another lower case letter) that you don't use.
-" You still need to escape / in the text , ore choose another delimiter (maybe ,)
+" by changing h in the command below to another lower case letter) that you don't use.
+" You still need to escape / in the text , or choose another delimiter (maybe ,)
 " I preset this to 'no' magic so most special chars are ignored
 vnoremap <C-r> "hy:%sno/<C-r>h//gc<left><left><left>
 
+
 " Deleting a line whitout cutting it to register
 nnoremap <leader>d A<C-u><Esc>
+
+
+" Automatically activate Autocomplete for PHP
+" See more here: https://www.simplified.guide/vim/auto-complete-php
+" try Ctrl + x followed by Ctrl + o after typing 'dat'
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType module set omnifunc=phpcomplete#CompletePHP
 
 
 " /etc/vimrc ends here
