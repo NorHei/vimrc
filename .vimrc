@@ -8,7 +8,7 @@
 " Reworked and collected by: 
 " author: Norbert Heimsath  <norbert@heimsath.org>
 "
-" version: 1.2.1
+" version: 1.2.2
 " commented lines start with `"'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
